@@ -1,0 +1,11 @@
+version: "3.9"
+services:
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_DB: SemPrace_A
+      POSTGRES_USER: martin
+      POSTGRES_PASSWORD: ggalkane
+    ports:
+      - 5432:5432

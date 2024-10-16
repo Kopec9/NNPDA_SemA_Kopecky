@@ -1,0 +1,34 @@
+server:
+  port: 9874
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/SemPrace_A
+    username: martin
+    password: ggalkane
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+
+    properties:
+      hiberbate:
+        show_sql: true
+        format_sql: true
+
+
+  mail:
+    host: sandbox.smtp.mailtrap.io
+    port: 2525
+    username: 59290c5b666925
+    password: b1046ef0557751
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
+
+jwt:
+  secret: asdfghjklyxcvbnm123789qwertzuiopmjzb821469sdsedhjbtvsrbnfbvdtrcvrbnugzftrvdfset12458kjhgfdwerfvhujmlkjhgfdsasweg
+
